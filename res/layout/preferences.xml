@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@android:style/Theme.Black.NoTitleBar">
+    
+    <PreferenceCategory android:title="Suas informações">
+        <com.slimming.widget.EditTextPreference
+            android:id="@+id/txtWishedWeight"
+            android:title="Peso desejado"
+            android:summary="Quantos quilos gostaria de pesar?"
+            android:key="wished_weight" />
+        <com.slimming.widget.DatePickerPreference
+            android:id="@+id/dtpWishedDate"
+            android:title="Data desejada"
+            android:summary="Quando gostaria de chegar neste peso?"
+            android:key="wished_date" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Notificações">
+        <CheckBoxPreference
+            android:title="Dia sem registro"
+            android:summary="Emitir um aviso se nenhum peso for informado no dia"
+            android:key="alert_missing_day" />
+    </PreferenceCategory>
+    
+</PreferenceScreen>

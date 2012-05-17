@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@android:color/background_dark" >
+
+        <Button
+            android:id="@+id/btnAddWeight"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=" + " android:textStyle="bold" android:layout_height="wrap_content" style="Style	?android:attr/buttonStyleSmall" android:layout_alignParentBottom="true" android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/lblSlimming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Slimming"
+            android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="@android:color/primary_text_dark" android:padding="5dp"/>
+
+        <Button
+            android:id="@+id/btnSetup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btnAddWeight"
+            android:text="..."
+            android:textStyle="bold" style="Style	?android:attr/buttonStyleSmall" android:layout_alignParentBottom="true" android:layout_marginTop="2dp"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lstWeights"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="40dp" android:layout_marginBottom="40dp">
+
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/background_dark" >
+
+        <Button
+            android:id="@+id/btnShowGraphic"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="Mostrar Gráfico" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

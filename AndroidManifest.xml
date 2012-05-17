@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.slimming.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity android:name=".SlimmingActivity" android:label="Slimming">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SetupActivity" android:label="Seus dados"></activity>
+        <activity android:name=".WeightActivity" android:label="Adicionar peso"></activity>
+        <activity android:name=".PreferencesActivity" android:label="Preferências"></activity>
+        <activity android:name="org.achartengine.GraphicalActivity"/>
+    </application>
+
+</manifest>
